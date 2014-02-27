@@ -6,7 +6,7 @@ summary 'Mange projects'
 description 'Manage project that can have a php enabled apache vhost with optionally a repository checked out and a database.'
 project_page 'https://github.com/md-systems/puppet-projects'
 
-dependency 'puppetlabs/stdlib', '~> 2.2.1'
+dependency 'puppetlabs/stdlib', '>= 2.2.1'
 dependency 'puppetlabs/mysql', '~> 0.9.0'
 dependency 'puppetlabs/apache', '~> 0.8.1'
 dependency 'arnoudj/sudo', '~> 1.1.1'
