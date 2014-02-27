@@ -13,4 +13,5 @@ dependency 'puppetlabs/vcsrepo', '~> 0.1.2'
 dependency 'arnoudj/sudo', '~> 1.1.1'
 dependency 'arnoudj/sudo', '~> 1.1.1'
 dependency 'lex/dnsmasq', '~> 1.1.0'
+dependency 'rafaelfc/pear', '~> 1.0.2'
 
