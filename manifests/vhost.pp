@@ -92,8 +92,6 @@ define projects::vhost (
       options       => ['FollowSymLinks','MultiViews'],
       override      => ['ALL'],
       port          => '80',
-      access_log_pipe   => '||/opt/lumberjack/bin/lumberjack.sh -log-to-syslog=true -config=/etc/lumberjack/lumberjack.conf -',
-      access_log_format => '{ \"@timestamp\": \"%{%Y-%m-%dT%H:%M:%S%z}t\", \"@message\": \"%r\", \"@fields\": { \"user-agent\": \"%{User-agent}i\", \"client\": \"%a\", \"duration_usec\": %D, \"duration_sec\": %T, \"status\": %s, \"request_path\": \"%U\", \"request\": \"%U%q\", \"method\": \"%m\", \"referrer\": \"%{Referer}i\" } }',
       serveraliases => $serveraliases,
     }
     File[$logroot]->File[$docroot]->Apache::Vhost[$servername]
