@@ -17,7 +17,7 @@ class projects::install::drush {
 
   pear::package { 'Console_Table': }
   pear::package { 'drush':
-    version    => '6.0.0RC4',
+    version    => 'latest',
     repository => 'pear.drush.org',
   }
 }
